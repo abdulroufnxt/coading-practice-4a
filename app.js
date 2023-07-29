@@ -104,7 +104,7 @@ app.post("/players/", async (request, response) => {
         ('${playerName}',${jerseyNumber},'${role}')
     `;
   const player = await database.run(postPlayerQuery);
-  response.send(player);
+  response.send("Player Added to Team");
 });
 
 module.exports = app;
